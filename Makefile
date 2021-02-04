@@ -6,14 +6,13 @@ install:
 lint:
 	pylint --disable=R,C application.py
 
-init_eb:
-	eb init -p python-3.7 flaskcd-app --region us-east-1
+create:
+	eb init -p python-3.7 ebcd-app --region us-east-1
+	eb create ebcd-env
 
-create_eb:
-	eb create flaskcd-env
-	
+
 deploy:
-	eb deploy
+	echo "Deploying webapp"
+	eb deploy ebcd-env
 
-	
-all: install lint init_eb create_eb deploy
+all: install lint
