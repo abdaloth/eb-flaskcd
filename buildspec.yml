@@ -10,6 +10,7 @@ phases:
       - python3 -m venv ~/.eb
       - source ~/.eb/bin/activate
       - make all
+      - make create
 
   build:
     commands:

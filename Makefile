@@ -13,7 +13,6 @@ create:
 
 deploy:
 	echo "Deploying webapp"
-	eb init
 	eb deploy ebcd-env
 
 all: install lint
