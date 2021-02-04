@@ -1,0 +1,16 @@
+
+version: 0.1
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.7
+  pre_build:
+    commands:
+      - python3 -m venv ~/.eb
+      - source ~/.eb/bin/activate
+      - make all
+
+  build:
+    commands:
+      - make deploy
