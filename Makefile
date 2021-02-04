@@ -13,6 +13,7 @@ create:
 
 deploy:
 	echo "Deploying webapp"
+	eb init -p python-3.7 ebcd-app --region us-east-1
 	eb deploy ebcd-env
 
 all: install lint
