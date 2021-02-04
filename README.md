@@ -1,2 +1,2 @@
 # eb-flaskcd
-testing flask continuous development on aws with elastic beanstalk
+testing flask continuous delivery on aws with elastic beanstalk
